@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cfafjspa450kp"]
+
+[ext_resource type="Script" uid="uid://cfs7ab4uxxtpf" path="res://Scenes/menu.gd" id="1_1rerr"]
+[ext_resource type="Script" uid="uid://crfydxlufkh70" path="res://Scenes/btn_reiniciar.gd" id="2_xhh6f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u4yt8"]
+font_size = 36
+
+[node name="MenuFimFase" type="CanvasLayer" unique_id=1546537693 groups=["Telas"]]
+process_mode = 3
+script = ExtResource("1_1rerr")
+
+[node name="MenuFimFase" type="Control" parent="." unique_id=1944469457]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 533.0
+
+[node name="Label" type="Label" parent="MenuFimFase" unique_id=564453753]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 59.0
+offset_right = 590.0
+offset_bottom = 109.0
+text = "Parabens! Você passou de fase!"
+label_settings = SubResource("LabelSettings_u4yt8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BtnProxima" type="Button" parent="MenuFimFase" unique_id=96528224]
+process_mode = 3
+layout_mode = 0
+offset_left = 118.0
+offset_top = 234.0
+offset_right = 535.09094
+offset_bottom = 326.0
+text = "Proxima fase"
+
+[node name="BtnReiniciar" type="Button" parent="MenuFimFase" unique_id=210827525]
+process_mode = 3
+layout_mode = 0
+offset_left = 118.0
+offset_top = 355.0
+offset_right = 535.09094
+offset_bottom = 448.0
+text = "Reinicar"
+script = ExtResource("2_xhh6f")
+
+[connection signal="pressed" from="MenuFimFase/BtnReiniciar" to="MenuFimFase/BtnReiniciar" method="_on_pressed"]
