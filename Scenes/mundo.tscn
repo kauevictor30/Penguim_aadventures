@@ -153,7 +153,7 @@ motion_offset = Vector2(0, 1)
 motion_mirroring = Vector2(300, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1553488999]
-position = Vector2(454, 180)
+position = Vector2(450.99997, 179.99998)
 scale = Vector2(3.125, 1.8894231)
 texture = ExtResource("2_has1v")
 
@@ -192,6 +192,18 @@ scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAaABAAAAAJAAMAAAAbABAAAAAKAAMAAAAcABAAAAANAAMAAAAgABAAAAAJAAMAAAAhABAAAAAKAAMAAAAiABAAAAANAAMAAAAlABEAAAAJAAMAAAAmABEAAAAKAAMAAAAnABEAAAANAAMAAAAqABMAAAAJAAMAAAArABMAAAAKAAMAAAAsABMAAAANAAMAAAA=")
 tile_set = SubResource("TileSet_glouy")
 
+[node name="arvores" type="TileMapLayer" parent="." unique_id=832567642]
+position = Vector2(-2, -907.00006)
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAEABcAAQABAAEAAAAEABgAAQABAAIAAAAEABkAAQABAAMAAAAFABcAAQACAAEAAAAFABgAAQACAAIAAAAFABkAAQACAAMAAAAGABcAAQADAAEAAAAGABgAAQADAAIAAAAGABkAAQABAAUAAAANABcAAQAJAAEAAAANABgAAQAJAAIAAAANABkAAQAJAAMAAAAOABcAAQAKAAEAAAAOABgAAQAKAAIAAAAOABkAAQAKAAMAAAAPABcAAQALAAEAAAAPABgAAQALAAIAAAAPABkAAQABAAUAAAATABcAAQABAAEAAAATABgAAQABAAIAAAATABkAAQABAAUAAAAUABcAAQACAAEAAAAUABgAAQACAAIAAAAUABkAAQACAAMAAAAVABcAAQADAAEAAAAVABgAAQADAAIAAAAVABkAAQABAAUAAAAZABcAAQAFAAEAAAAZABgAAQAFAAIAAAAZABkAAQABAAUAAAAaABcAAQAGAAEAAAAaABgAAQAGAAIAAAAaABkAAQAGAAMAAAAbABcAAQAHAAEAAAAbABgAAQAHAAIAAAAbABkAAQAHAAMAAAAjABcAAQABAAUAAAAdABkAAQABAAUAAAAgABkAAQABAAUAAAAhABkAAQABAAUAAAAwAA8AAQABAAUAAAAvAA8AAQABAAUAAAA7ABcAAQABAAEAAAA7ABgAAQABAAIAAAA7ABkAAQABAAUAAAA8ABcAAQACAAEAAAA8ABgAAQACAAIAAAA8ABkAAQACAAMAAAA9ABcAAQADAAEAAAA9ABgAAQADAAIAAAA9ABkAAQABAAUAAABAABcAAQAJAAEAAABAABgAAQAJAAIAAABAABkAAQABAAUAAABBABcAAQAKAAEAAABBABgAAQAKAAIAAABBABkAAQAKAAMAAABCABcAAQALAAEAAABCABgAAQALAAIAAABCABkAAQALAAMAAABEABcAAQAFAAEAAABEABgAAQAFAAIAAABEABkAAQAFAAMAAABFABcAAQAGAAEAAABFABgAAQAGAAIAAABFABkAAQAGAAMAAABGABcAAQAHAAEAAABGABgAAQAHAAIAAABGABkAAQABAAUAAAAaAA8AAQABAAUAAAAbAA8AAQABAAUAAAAcAA8AAQABAAUAAAAgAA8AAQABAAUAAAAnABAAAQABAAUAAAAqABIAAQABAAUAAAA=")
+tile_set = SubResource("TileSet_glouy")
+
+[node name="elementos_extras" type="TileMapLayer" parent="." unique_id=1527968855]
+position = Vector2(-2, -907.00006)
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAADABkAAQADAAUAAAAHABkAAQAFAAUAAAAIABkAAQAGAAUAAAAJABkAAQAGAAUAAAAKABkAAQAHAAUAAAALABkAAQAHAAUAAAAMABkAAQAHAAUAAAAeABkAAQAGAAUAAAAfABkAAQAHAAUAAAAdABkAAQAGAAUAAAAcABkAAQAGAAUAAAAbABkAAQAFAAUAAAA4ABkAAQAGAAUAAAA5ABkAAQAGAAUAAAA6ABkAAQAHAAUAAAA3ABkAAQAGAAUAAAA2ABkAAQAFAAUAAABMABkAAQAMAAUAAABKABkAAQAKAAUAAABLABkAAQALAAUAAABIABkAAQAKAAUAAABJABkAAQALAAUAAABHABkAAQAJAAUAAAA=")
+tile_set = SubResource("TileSet_glouy")
+
 [node name="jogador" parent="." unique_id=899385754 instance=ExtResource("2_uqtxj")]
 position = Vector2(67, 301)
 
@@ -220,53 +232,70 @@ position = Vector2(698, 397)
 position = Vector2(884, 397)
 
 [node name="Coin8" parent="Coins" unique_id=621716176 instance=ExtResource("3_gqidu")]
-position = Vector2(1291, 392)
+position = Vector2(1280, 390)
 
 [node name="Coin9" parent="Coins" unique_id=1768477539 instance=ExtResource("3_gqidu")]
 position = Vector2(1342, 358)
 
 [node name="Coin10" parent="Coins" unique_id=1302969982 instance=ExtResource("3_gqidu")]
-position = Vector2(1388, 327)
+position = Vector2(1400, 323)
 
 [node name="Coin11" parent="Coins" unique_id=1643725774 instance=ExtResource("3_gqidu")]
 position = Vector2(1461, 287)
-rotation = -2.6179938
 
 [node name="Coin12" parent="Coins" unique_id=1587304472 instance=ExtResource("3_gqidu")]
 position = Vector2(1579, 242.99997)
-rotation = -2.6179938
 
 [node name="Coin13" parent="Coins" unique_id=1292443415 instance=ExtResource("3_gqidu")]
 position = Vector2(1663, 202.99997)
-rotation = -2.6179938
 
 [node name="Coin14" parent="Coins" unique_id=1086793379 instance=ExtResource("3_gqidu")]
 position = Vector2(1751.0001, 203.00006)
-rotation = -3.6651917
 
 [node name="Coin15" parent="Coins" unique_id=1765898542 instance=ExtResource("3_gqidu")]
 position = Vector2(1890.9999, 62.99989)
-rotation = -3.6651917
 
 [node name="Coin16" parent="Coins" unique_id=1042363566 instance=ExtResource("3_gqidu")]
 position = Vector2(1648.9999, -42)
-rotation = -3.6651917
 
 [node name="Coin17" parent="Coins" unique_id=1541956112 instance=ExtResource("3_gqidu")]
 position = Vector2(1414, -89.00002)
-rotation = -3.6651917
 
 [node name="Coin18" parent="Coins" unique_id=879429043 instance=ExtResource("3_gqidu")]
 position = Vector2(1075, -88.99999)
-rotation = -3.6651917
 
 [node name="Coin19" parent="Coins" unique_id=1900373705 instance=ExtResource("3_gqidu")]
 position = Vector2(1127.9999, -90.00002)
-rotation = -3.6651917
 
 [node name="Coin20" parent="Coins" unique_id=1506504789 instance=ExtResource("3_gqidu")]
 position = Vector2(1175, -88.99994)
-rotation = -3.6651917
+
+[node name="Coin21" parent="Coins" unique_id=1775722828 instance=ExtResource("3_gqidu")]
+position = Vector2(2808, 395.0001)
+
+[node name="Coin22" parent="Coins" unique_id=1902677301 instance=ExtResource("3_gqidu")]
+position = Vector2(2855, 395.0001)
+
+[node name="Coin23" parent="Coins" unique_id=607947696 instance=ExtResource("3_gqidu")]
+position = Vector2(3037, 395.0001)
+
+[node name="Coin24" parent="Coins" unique_id=291997685 instance=ExtResource("3_gqidu")]
+position = Vector2(3235, 395.0001)
+
+[node name="Coin25" parent="Coins" unique_id=36803587 instance=ExtResource("3_gqidu")]
+position = Vector2(3281, 395.0001)
+
+[node name="Coin26" parent="Coins" unique_id=1482129277 instance=ExtResource("3_gqidu")]
+position = Vector2(3326, 395.0001)
+
+[node name="Coin27" parent="Coins" unique_id=1551686198 instance=ExtResource("3_gqidu")]
+position = Vector2(3375, 395.0001)
+
+[node name="Coin28" parent="Coins" unique_id=953882634 instance=ExtResource("3_gqidu")]
+position = Vector2(3425.0002, 395.0001)
+
+[node name="Coin29" parent="Coins" unique_id=1298023510 instance=ExtResource("3_gqidu")]
+position = Vector2(3480, 395.0001)
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=2139129703 groups=["Interface"]]
 
