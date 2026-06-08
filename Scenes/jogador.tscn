@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://hj0thc6v3t47" path="res://Assets/Sprite Pack 6/1 - Penguin/Idle (16 x 16).png" id="4_xse76"]
 [ext_resource type="Texture2D" uid="uid://bshns0mrewyf8" path="res://Assets/Sprite Pack 6/1 - Penguin/Belly_Sliding (16 x 16).png" id="5_tw2ln"]
 [ext_resource type="Texture2D" uid="uid://16ypo5k2jp6v" path="res://Assets/Sprite Pack 6/1 - Penguin/Jump (16 x 16).png" id="6_grcb1"]
+[ext_resource type="Texture2D" uid="uid://b2c2h6tx7n7pd" path="res://Assets/Sprite Pack 6/1 - Penguin/Wall_Grab (16x16).png" id="7_tw2ln"]
+[ext_resource type="AudioStream" uid="uid://dev3cfybi0gg1" path="res://musics/audio_fx/pulo.mp3" id="7_y6kko"]
+[ext_resource type="Texture2D" uid="uid://wiicvfjondf6" path="res://Assets/Sprite Pack 6/1 - Penguin/Wall_Slide (16x16).png" id="8_grcb1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2sw5t"]
 atlas = ExtResource("2_em14g")
@@ -66,6 +69,22 @@ region = Rect2(32, 0, 16, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xcfn"]
 atlas = ExtResource("6_grcb1")
 region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g8ah"]
+atlas = ExtResource("8_grcb1")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbm02"]
+atlas = ExtResource("8_grcb1")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnxw6"]
+atlas = ExtResource("8_grcb1")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bupj"]
+atlas = ExtResource("8_grcb1")
+region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8g8ah"]
 animations = [{
@@ -141,6 +160,31 @@ animations = [{
 "loop": true,
 "name": &"pulo",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_tw2ln")
+}],
+"loop": true,
+"name": &"wall_grab",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g8ah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbm02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnxw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bupj")
+}],
+"loop": true,
+"name": &"wall_slide",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bsm1f"]
@@ -154,8 +198,8 @@ script = ExtResource("1_k6dqt")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1881739058]
 scale = Vector2(0.99999994, 0.99999994)
 sprite_frames = SubResource("SpriteFrames_8g8ah")
-animation = &"andar"
-frame_progress = 0.6722487
+animation = &"wall_grab"
+frame_progress = 0.8633337
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=295750853]
 shape = SubResource("CapsuleShape2D_bsm1f")
@@ -167,3 +211,6 @@ limit_top = -10000003
 limit_right = 1277
 limit_bottom = 9999997
 position_smoothing_enabled = true
+
+[node name="SfxPulo" type="AudioStreamPlayer" parent="." unique_id=1706345490]
+stream = ExtResource("7_y6kko")

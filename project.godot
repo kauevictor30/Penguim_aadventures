@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="workshop"
+config/name="Penguim_adventure"
 run/main_scene="res://Scenes/mundo.tscn"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
